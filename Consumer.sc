@@ -28,6 +28,6 @@ class Consumer(brokers: String, topic: String, groupId: String) {
 
 }
 
-val consumer = new Consumer(brokers = "", topic = "", groupId = "")
+val consumer = new Consumer(brokers = "localhost:9092", topic = "messages", groupId = "test")
 consumer.receiveMessages()
 

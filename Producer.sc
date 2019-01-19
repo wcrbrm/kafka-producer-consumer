@@ -32,5 +32,5 @@ class Producer(topic: String, brokers: String) {
 
 }
 
-val producer = new Producer(brokers = "", topic = "")
+val producer = new Producer(brokers = "localhost:9092", topic = "messages")
 producer.sendMessages()
